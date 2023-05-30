@@ -1,10 +1,9 @@
-import { imageUrlArray } from './utilities/constants'
 import classes from './styles/ImagePreview.module.css'
 
 const ImagePreview = (props) => {
   return (
-    <div className={''}>
-        <img className={classes.preview__container} src={props.selctedImage.url} alt="" loading='lazy'/>
+    <div className={classes.preview__container}>
+        <img className={classes.preview__image} src={props.selctedImage.url} alt="" loading='lazy'/>
     </div>
   )
 }

@@ -4,3 +4,7 @@
     border-radius: 50px;
     overflow: hidden;
 }
+.preview__image{
+    height: 100%;
+    width: 100%;
+}

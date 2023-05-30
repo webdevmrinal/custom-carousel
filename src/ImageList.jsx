@@ -2,8 +2,6 @@ import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import classes from "./styles/ImageList.module.css";
 
-console.log(classes);
-
 const ImageList = (props) => {
   function handleRight() {
     if (props.selectedImage === 4) props.onSetSelctedImage(0);
@@ -29,6 +27,7 @@ const ImageList = (props) => {
             src={item.url}
             alt=""
             loading="lazy"
+            onClick={()=>{props.onSetSelctedImage(index)}}
           />
         ))}
       </div>
