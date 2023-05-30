@@ -1,0 +1,10 @@
+.article__title{
+    font-size: 3em;
+    color: #707070;
+    padding: 0 0 1em;
+}
+.article__content{
+    font-size: .9em;
+    color: #707070;
+    padding-right: .8em;
+}

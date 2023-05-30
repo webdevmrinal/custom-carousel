@@ -1,0 +1,28 @@
+.carousel__container {
+  margin-top: 25px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 1fr;
+  height: 95vh;
+  width: 100vw;
+}
+
+.carousel__container > div:first-child {
+  display: grid;
+  grid-template-rows: 75% 20%;
+  align-items: center;
+  gap: 10px;
+}
+
+.carousel__container > div:last-child {
+  overflow: auto;
+  display: grid;
+  grid-template-rows: 75% 25%;
+}
+
+.carousel__container span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
