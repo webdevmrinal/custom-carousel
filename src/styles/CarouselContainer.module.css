@@ -49,3 +49,18 @@
     align-items: center;
   }
 }
+
+@media (max-width: 768px) {
+  .carousel__container {
+    display: block;
+  }
+  .carousel__container > div:last-child {
+    gap: 0;
+  }
+  .carousel__container > div:first-child > div:first-child {
+    width: 90vw;
+  }
+  .carousel__container > div:first-child > div:last-child {
+    width: 90vw;
+  }
+}
