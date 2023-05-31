@@ -17,7 +17,7 @@ function CarouselContainer() {
     if (isPlaying) {
       intervalId = setInterval(() => {
         setSelctedImage((prev) => (prev + 1) % imageUrlArray.length);
-      }, 2000);
+      }, 3000);
     }
     return () => {
       if (intervalId) clearInterval(intervalId);

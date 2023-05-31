@@ -1,10 +1,21 @@
-.article__title{
-    font-size: 3em;
-    color: #707070;
-    padding: 0 0 1em;
+.article__container {
+  width: 100%;
+  padding: 0 3em;
 }
-.article__content{
-    font-size: .9em;
-    color: #707070;
-    padding-right: .8em;
+.article__title {
+  width: 100%;
+  font-size: 3em;
+  color: #707070;
+  padding: 0 0 1em;
+}
+.article__content {
+  font-size: 0.9em;
+  color: #707070;
+  padding-right: 0.8em;
+}
+@media screen and (max-width: 1390px) {
+  .article__container {
+    width: 100%;
+    padding: 1em;
+  }
 }
