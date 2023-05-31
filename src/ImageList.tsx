@@ -1,8 +1,16 @@
+import React from 'react';
+import { ImageUrl } from './utilities/constants';
 import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import classes from "./styles/ImageList.module.css";
 
-const ImageList = (props) => {
+interface ImageListProps {
+  selectedImage: number;
+  onSetSelctedImage: (index: number) => void;
+  imageArray: ImageUrl[];
+}
+
+const ImageList: React.FC<ImageListProps> = (props) => {
   function handleRight() {
     if (props.selectedImage === 4) props.onSetSelctedImage(0);
     else props.onSetSelctedImage((prev) => prev + 1);
@@ -27,7 +35,6 @@ const ImageList = (props) => {
             src={item.url}
             alt=""
             loading="lazy"
-            onClick={()=>{props.onSetSelctedImage(index)}}
           />
         ))}
       </div>

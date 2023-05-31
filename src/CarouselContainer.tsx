@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import ImageList from "./ImageList";
 import ImagePreview from "./ImagePreview";
 import { imageUrlArray } from "./utilities/constants";
@@ -9,15 +9,15 @@ import PauseCircleFilledIcon from "@mui/icons-material/PauseCircleFilled";
 import classes from "./styles/CarouselContainer.module.css";
 
 function CarouselContainer() {
-  const [selctedImage, setSelctedImage] = useState(2);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [selctedImage, setSelctedImage] = useState<number>(2);
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
 
   useEffect(() => {
-    let intervalId;
+    let intervalId: NodeJS.Timeout;
     if (isPlaying) {
       intervalId = setInterval(() => {
         setSelctedImage((prev) => (prev + 1) % imageUrlArray.length);
-      }, 3000);
+      }, 2000);
     }
     return () => {
       if (intervalId) clearInterval(intervalId);

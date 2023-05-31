@@ -1,4 +1,11 @@
-export const imageUrlArray = [
+export interface ImageData {
+  id: number;
+  url: string;
+  title: string;
+  about: string;
+}
+
+export const imageUrlArray: ImageData[] = [
   {
     id: Math.random(),
     url: "https://images.unsplash.com/photo-1440589473619-3cde28941638?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=768&ixid=MnwxfDB8MXxyYW5kb218MHx8Z2lybHx8fHx8fDE2ODUzNjI1NjU&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1126",

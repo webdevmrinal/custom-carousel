@@ -1,7 +1,7 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import React, { StrictMode } from "react";
+import { createRoot } from "react-dom";
 
-import './styles/main.css'
+import './styles/main.css';
 
 import CarouselContainer from "./CarouselContainer";
 
